@@ -1,13 +1,17 @@
 To make sure you do not incur additional charges when you no longer need the to experiment with the jumpstart model, follow these steps to remove the resources you created when following the blog post [Using Generative AI foundation models in VPC mode with no internet connectivity using SageMaker JumpStart]().
 
 ### 1. Make note of the Amazon Resource Name (ARN) for the SageMaker Studio domain
-You will need the full ARN of the SageMaker Studio domain in step 3. Go to the CloudFormation console, select the second stack you created (named SageMaker-Studio-VPC-No-Internet if you used the suggested name in the blog). Go to the Output tab, copy the value of the output named `StudioDomainArn` and keep it somewhere safe.
+You will need the full ARN of the SageMaker Studio domain in step 3.   
+- Go to the CloudFormation console, select the second stack you created (named SageMaker-Studio-VPC-No-Internet if you used the suggested name in the blog). 
+- Go to the Output tab, copy the value of the output named `StudioDomainArn` and keep it somewhere safe.
 
 ### 2. Delete the SageMaker Endpoint and resources
 Follow the steps to delete the [SageMaker inference endpoint and resources via the AWS console](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-delete-resources.html).
 
 ### 3. Delete the SageMaker Studio and associated resources
-Go to the CloudFormation console. Locate the second stack you created (named SageMaker-Studio-VPC-No-Internet if you used the suggested name in the blog) and delete the stack. When the stack is deleted, move to the next step.
+- Go to the CloudFormation console.
+- Locate the second stack you created (named SageMaker-Studio-VPC-No-Internet if you used the suggested name in the blog) and delete the stack.
+- When the stack is deleted, move to the next step.
 
 ### 4. Remove the mount points (ENIs) for the EFS volume, ENI for the inference endpoint, and security groups created by SageMaker Studio
 In this step, you will delete the resources that were automatically created when you created the SageMaker Studio domain, including the EFS mount points and security groups.
