@@ -2,7 +2,7 @@
 
 
 ## Getting started
-This code sample accompanies the blog post [Using Generative AI foundation models in VPC mode with no internet connectivity using SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/). Please follow the steps in the blog post to create the AWS CloudFormation stacks using the templates provided.
+This code sample accompanies the blog post [Using Generative AI foundation models in VPC mode with no internet connectivity using Amazon SageMaker JumpStart](https://aws.amazon.com/blogs/machine-learning/). Please follow the steps in the blog post to create the AWS CloudFormation stacks using the templates provided.
 
 
 ## Clean up
